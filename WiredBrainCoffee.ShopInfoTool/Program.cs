@@ -7,13 +7,15 @@ namespace WiredBrainCoffee.ShopInfoTool
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Write 'help' to list the coffee shops!");
+            Console.WriteLine("Write 'help' to list the coffee shops or 'quit' to leave the program!");
 
             var provider = new CoffeeShopDataProvider();
 
             while (true)
             {
                 var line = Console.ReadLine();
+
+                if (string.Equals(line, "quit", StringComparison.InvariantCultureIgnoreCase)) break;
 
                 var coffeeShops = provider.LoadCoffeeShops();
 
