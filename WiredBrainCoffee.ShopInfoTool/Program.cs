@@ -40,7 +40,7 @@ namespace WiredBrainCoffee.ShopInfoTool
                         Console.WriteLine($"> No coffee shops found for {line}");
                     }
                     else
-                    {
+                    { 
                         if (availableShopsCount > 1)
                         {
                             Console.WriteLine($"> Multiple coffees shops available for the search criteria");
