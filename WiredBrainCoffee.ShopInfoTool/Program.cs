@@ -8,8 +8,8 @@ namespace WiredBrainCoffee.ShopInfoTool
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Write 'help' to list the coffee shops or 'quit' to leave the program! Then write the name of the location");
-
+            Console.WriteLine($"Write 'help' to list the coffee shops or 'quit' to leave the program! Then write the name of the location");
+            Console.WriteLine($"This is after changing the branch");
             var provider = new CoffeeShopDataProvider();
 
             while (true)
