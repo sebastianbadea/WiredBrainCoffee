@@ -7,7 +7,7 @@ namespace WiredBrainCoffee.ShopInfoTool
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Write 'help' to list the coffee shops!");
+            Console.WriteLine("Write 'help' to list the coffee shops! MTF");
 
             var provider = new CoffeeShopDataProvider();
 
